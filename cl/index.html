@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"><title>Carlos’s 12-Week Restart</title><style>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"><title>CL · 12-Week Strength Restart</title><style>
     :root {
       --black: #0d0d0d;
       --dark: #1a1a1a;
@@ -179,9 +179,9 @@
     .set-table { margin: 8px 0; }
     @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
 </style></head><body>
-<main class="app"><header class="app-header"><h1>Carlos’s 12-Week Restart</h1><p>Strength · Sustainable accessories · Recovery around work</p></header><div class="stats-strip"><div class="stat-mini"><div class="lift">Bench</div><div class="weight">160</div><div class="label">estimated 1RM · lb</div></div><div class="stat-mini"><div class="lift">Back squat</div><div class="weight">155</div><div class="label">estimated 1RM · lb</div></div><div class="stat-mini"><div class="lift">Deadlift</div><div class="weight">225</div><div class="label">estimated 1RM · lb</div></div><div class="stat-mini"><div class="lift">Push press</div><div class="weight">110</div><div class="label">estimated 1RM · lb</div></div><div class="stat-mini"><div class="lift">Front squat</div><div class="weight">125</div><div class="label">estimated 1RM · lb</div></div></div>
+<main class="app"><header class="app-header"><h1>CL · 12-Week Strength Restart</h1><p>Strength · Sustainable accessories · Recovery around work</p></header><div class="stats-strip"><div class="stat-mini"><div class="lift">Bench</div><div class="weight">160</div><div class="label">estimated 1RM · lb</div></div><div class="stat-mini"><div class="lift">Back squat</div><div class="weight">155</div><div class="label">estimated 1RM · lb</div></div><div class="stat-mini"><div class="lift">Deadlift</div><div class="weight">225</div><div class="label">estimated 1RM · lb</div></div><div class="stat-mini"><div class="lift">Push press</div><div class="weight">110</div><div class="label">estimated 1RM · lb</div></div><div class="stat-mini"><div class="lift">Front squat</div><div class="weight">125</div><div class="label">estimated 1RM · lb</div></div></div>
 <details class="guide" open><summary>How to use this restart</summary>
-<p>Four training days, with Day 3 kept easy and Day 4 optional recovery. Start Week 1, Day 1. Move sessions around FedEx shifts; avoid stacking missed sessions. Strength estimates anchor the plan, while training tolerance rebuilds.</p>
+<p>Four training days, with Day 3 kept easy and Day 4 optional recovery. Start Week 1, Day 1. Move sessions around work shifts; avoid stacking missed sessions. Strength estimates anchor the plan, while training tolerance rebuilds.</p>
 <p><strong>Weights:</strong> barbell loads include the bar; dumbbell loads are per hand. Listed loads are targets, not minimums. Repetitions in reserve means additional good repetitions you could perform before failure.</p>
 <p><strong>Progress only when recovered.</strong> Keep 3-4 repetitions available on accessories throughout the cycle. Stop sets before technique changes.</p>
 </details>
@@ -196,7 +196,7 @@
 <details class="guide"><summary>Elbow symptoms & when to get help</summary>
 <p>Strengthening may improve capacity, but does not establish the cause of elbow discomfort or guarantee that other muscles will take its load. This plan is general training, not injury rehabilitation.</p>
 <p>Stop a provoking exercise for sharp or increasing pain, altered technique, or loss of strength. If symptoms are worse the next morning or at work, reduce or omit that exercise next time.</p>
-<p>Recurring symptoms with parcel handling, especially lasting several weeks or affecting work, warrant clinician or physical therapist assessment. Seek prompt medical care for new numbness, marked weakness, significant swelling, or an acute snapping injury. Severe pain with difficulty moving, deformity, or a hot swollen elbow with fever needs urgent assessment.</p>
+<p>Recurring symptoms with repetitive lifting, especially lasting several weeks or affecting work, warrant clinician or physical therapist assessment. Seek prompt medical care for new numbness, marked weakness, significant swelling, or an acute snapping injury. Severe pain with difficulty moving, deformity, or a hot swollen elbow with fever needs urgent assessment.</p>
 </details>
 <section class="phase-section"><div class="phase-banner p1"><div class="lab">Phase 1 · Weeks 1-4</div><h2>Reentry & foundation</h2><div class="focus">Rebuild volume gradually. Recovery in Week 4.</div></div><div id="weeks-p1"></div></section><section class="phase-section"><div class="phase-banner p2"><div class="lab">Phase 2 · Weeks 5-8</div><h2>Strength development</h2><div class="focus">Lower repetitions, controlled loading. Recovery in Week 8.</div></div><div id="weeks-p2"></div></section><section class="phase-section"><div class="phase-banner p3"><div class="lab">Phase 3 · Weeks 9-12</div><h2>Strength practice & review</h2><div class="focus">Heavier practice, Week 11 taper, Week 12 submaximal review.</div></div><div id="weeks-p3"></div></section></main><div class="modal-backdrop" id="modalBackdrop"></div><div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalDay" aria-describedby="modalWeek"><div class="modal-header"><button class="modal-back" id="modalBack">← Back</button><div class="modal-title"><div class="modal-title-week" id="modalWeek"></div><h2 class="modal-title-day" id="modalDay"></h2></div></div><div class="modal-body" id="modalBody" tabindex="-1"></div></div><script>
     /* {% raw %} */
@@ -270,7 +270,7 @@
         body += conditioning(w,4);
       }
       body += section('Finish & check recovery', '<p>Use 3-5 minutes of easy movement and comfortable mobility. No prescribed dead hangs or forced stretches. Check symptoms later today, tomorrow morning, and at the next work shift.</p>');
-      if (n===12) body += note('<strong>Progress review:</strong> Record loads, repetitions, estimated repetitions remaining, elbow response, sleep, and how FedEx shifts felt. Compare similar-effort sets with early weeks. No mandatory max or PR attempts; use these observations to plan the next block.');
+      if (n===12) body += note('<strong>Progress review:</strong> Record loads, repetitions, estimated repetitions remaining, elbow response, sleep, and how work shifts felt. Compare similar-effort sets with early weeks. No mandatory max or PR attempts; use these observations to plan the next block.');
       return body;
     }
     function weekNote(w) {
