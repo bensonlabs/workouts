@@ -1,10 +1,22 @@
 # Workouts
 
-Standalone workout plans published through [bensonlabs.org](https://bensonlabs.org/projects/workouts/).
+Source repository for the workout plans published on [bensonlabs.org](https://bensonlabs.org/projects/workouts/).
 
 ## Plans
 
-- `justin/index.html` is Justin’s active 12-week plan.
-- `carlos/index.html` is Carlos’s dedicated plan, ready to be personalized.
+| Person | Source file | Published route | Status |
+|---|---|---|---|
+| Justin | `justin/index.html` | [/projects/workouts/](https://bensonlabs.org/projects/workouts/) | Live |
+| Carlos | `carlos/index.html` | `/projects/workouts/carlos/` | Reserved, not published yet |
 
-The blog's GitHub Pages workflow copies `justin/index.html` into `/projects/workouts/` during deployment. Edit the appropriate person’s file here, not the blog repository.
+Each plan is a self-contained, mobile-first HTML document. It has no build dependencies and can be opened directly in a browser for local preview.
+
+## Publishing
+
+The [bensonlabs/blog](https://github.com/bensonlabs/blog) Pages workflow checks out this public repository during its build.
+
+- Justin's file is converted into the blog's Jekyll `project` layout and published at `/projects/workouts/`.
+- Carlos's source file remains separate until his plan and public route are ready.
+- A push here does not trigger the blog deployment automatically. After changing Justin's plan, run **Deploy Jekyll to GitHub Pages** from the blog repository's Actions tab, or make a normal commit to the blog repository.
+
+Edit plans in this repository, never in the temporary `projects/workouts/` directory created inside the blog build workspace.
