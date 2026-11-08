@@ -13,10 +13,16 @@ Each plan is a self-contained, mobile-first HTML document. It has no build depen
 
 ## Publishing
 
-The [bensonlabs/blog](https://github.com/bensonlabs/blog) Pages workflow checks out this public repository during its build.
+This repository publishes the plans as versioned releases; the
+[bensonlabs/blog](https://github.com/bensonlabs/blog) pins one release and puts it on bensonlabs.org.
 
-- Justin's file is converted into the blog's Jekyll `project` layout and published at `/projects/workouts/`.
-- The restart plan is converted into the same layout and published at `/projects/workouts/cl/`.
-- A push here does not trigger the blog deployment automatically. After changing Justin's plan, run **Deploy Jekyll to GitHub Pages** from the blog repository's Actions tab, or make a normal commit to the blog repository.
+1. Edit a plan here and merge it to `main`. CI packs both pages as a check.
+2. Tag a version, such as `v1.0.1`. The release workflow publishes `workouts-v1.0.1.tar.gz` and its sha256.
+3. In the blog, `python3 .github/scripts/components.py bump workouts v1.0.1` pins that release in
+   `_data/components.json`. Merging that PR deploys the site.
 
-Edit plans in this repository, never in the temporary `projects/workouts/` directory created inside the blog build workspace.
+Justin's plan (`justin/index.html`) is published at `/projects/workouts/`, and the restart plan
+(`cl/index.html`) at `/projects/workouts/cl/`. Both stay standalone pages here; the blog wraps them in
+its site header. To see what a release contains, run `python3 tools/pack.py` and open `dist/projects/workouts/`.
+
+Edit plans in this repository, never in the blog: its `projects/workouts/` folder is filled in at build time.
