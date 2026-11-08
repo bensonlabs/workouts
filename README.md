@@ -1,3 +1,7 @@
+> **Moved (2026-11-08):** the plans now live in [bensonlabs/projects](https://github.com/bensonlabs/projects)
+> under `site/workouts/`, with this history. Justin's plan is at bensonlabs.org/projects/workouts/justin/,
+> the CL plan at /projects/workouts/cl/, and /projects/workouts/ lists every plan. This repo is archived.
+
 # Workouts
 
 Source repository for the workout plans published on [bensonlabs.org](https://bensonlabs.org/projects/workouts/).
